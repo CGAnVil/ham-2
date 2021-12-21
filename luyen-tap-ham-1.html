@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    <!--    Bài 1-->
+    function alertMessage() {
+        alert('Xin chào')
+    }
+
+    alertMessage()
+
+    //Bài 2
+    function getNumber(number) {
+        number++
+        return number
+    }
+
+    let resultBai2 = getNumber(7)
+    alert(resultBai2)
+
+    //Bài 3
+    let total = 0
+
+    function bai3(a, b) {
+        if (a > b) {
+            alert(a + ' lớn hơn ' + b)
+        } else {
+            total = a + b
+            alert('Tổng hai số là ' + total)
+        }
+    }
+
+    bai3(4, 3)
+
+    //Bài 4
+    function addNumbers() {
+        let firstNum = 4;
+        let secondNum = 8;
+        result = firstNum + secondNum;
+        return result;
+    }
+
+    let result = 0;
+    alert(result)
+    result = addNumbers();
+    alert(result)
+</script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+<!--    Bài 1-->
+    function square(number){
+        let result
+        result = Math.pow(number,2)
+        return result
+    }
+    alert(square(4))
+
+//Bài 2
+function calculateCircle(r){
+    let c = 2*r*3.14
+    let s = Math.pow(r,2)*3.14
+    alert('Chu vi hình tròn bán kính '+ r + ' là'+ c)
+    alert('Diện tích hình tròn bán kính '+r+' là'+c)
+}
+
+calculateCircle(10)
+
+//bài 3
+function factorial(number){
+    let result =1
+    for(let i = 1; i<=number; i++){
+        result = result* i
+    }
+    return result
+}
+
+alert(factorial(7))
+
+//Bài 4
+function isNumber(check){
+    if (check === NaN){
+        alert('không phải một số')
+    }else{alert('Là một số')}
+}
+isNumber(10)
+
+//Bài 5
+function findMin(a,b,c){
+    let array = [a,b,c]
+    let min = array[0]
+    for (let i = 0; i<array.length; i++){
+        if (array[i]<min)
+            min = array[i]
+    }
+    alert('Số nhỏ nhất là : '+min)
+}
+
+findMin(3,5,1)
+
+//Bài 6
+function isPositiveIntegers(x){
+    if (x>=0){
+        alert(x +' là số nguyên dương')
+    }else {alert(x+' là số nguyên âm')}
+}
+isPositiveIntegers(-10)
+</script>
+</body>
+</html>
